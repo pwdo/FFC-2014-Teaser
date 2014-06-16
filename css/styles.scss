@@ -568,7 +568,7 @@ section {
 
 	.content {
 		width: 740px;
-		padding: 0 10px;
+		padding: 0 10px 60px;
 		position: relative;
 		@include box-sizing(border-box);
 
@@ -644,6 +644,55 @@ section {
 		&:hover {
 			cursor: pointer;
 			background: lighten($sandyellow, 20%);
+		}
+	}
+
+	footer {
+		position: absolute;
+		bottom: 60px;
+		left: 70px;
+		font-size: 1.25em;
+		color: $paperwhite;
+
+		@include breakpoint(l) {
+		    bottom: 30px;
+			left: 40px;
+		}
+
+		@include breakpoint(lm) {
+		    position: static;
+		    width: 100%;
+		    text-align: center;
+		    @include box-sizing(border-box);
+		}
+
+		@include breakpoint(pm) {
+		    position: static;
+		    width: 100%;
+		    text-align: center;
+		    @include box-sizing(border-box);
+		}
+
+		a {
+			color: $paperwhite;		
+			margin: 0 15px 0 0;
+
+			&.nav-sub:last-of-type {
+		    	margin: 0;
+		    }
+
+		    &:hover {
+		    	color: $sandyellow;
+		    }
+		}
+
+		p {
+			margin: 15px 0 0;
+			font-size: 0.85em;
+
+			a {
+				margin: 0;
+			}
 		}
 	}
 }
