@@ -568,7 +568,7 @@ section {
 
 	.content {
 		width: 740px;
-		padding: 0 10px 60px;
+		padding: 0 10px 100px;
 		position: relative;
 		@include box-sizing(border-box);
 
@@ -611,7 +611,7 @@ section {
 	}
 
 	select {
-		font-size: 1.25em;
+		font-size: 1em;
 		width: 37%;
 
 		@include breakpoint(lm) {
